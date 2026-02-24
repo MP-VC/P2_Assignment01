@@ -45,4 +45,19 @@ public class Util2DArray {
         }
         return minOfRow(transpose);
     }
+
+    public static double[][] add(double[][] numbs1, double[][] numbs2) {
+        int length = Math.max(numbs1.length, numbs2.length);
+        double[][] sum = new double[length][];
+        for(int x = 0; x < length; x++) {
+            for(int y = 0; y < length; y++) {
+                try {
+                        double j = numbs1[x][y] + numbs2[x][y];
+                        sum[x][y] = j;
+                }
+                catch(IndexOutOfBoundsException _) {}
+            }
+        }
+        return sum;
+    }
 }
