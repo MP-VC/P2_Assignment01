@@ -70,9 +70,9 @@ public class Animal {
 
     @Override
     public String toString() {
-        return  "Name:" + name + '\'' +
-                "Gender:" + gender + '\'' +
-                "Age:" + age +
+        return  "Name:" + name + '\n' +
+                "Gender:" + gender + '\n' +
+                "Age:" + age + '\n' +
                 "Type:" + type;
     }
 

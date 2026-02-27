@@ -1,6 +1,7 @@
 import task1.*;
 import task2.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -22,5 +23,17 @@ public class Main {
         System.out.println(Arrays.deepToString(Util2DArray.appendArray(numbs1,numb2)));
         System.out.println(Arrays.deepToString(Util2DArray.expendArray(numbs1,numb2)));
         System.out.println(Arrays.deepToString(Util2DArray.transposeMatrix(numbs1)));
+
+        Zoo z = new Zoo(new ArrayList<>(Arrays.asList(
+                new Animal("Tom", "male", 5, "cat"),
+                new Animal("Jerry", "female", 3, "cat"),
+                new Animal("Spike", "male", 7, "dog"),
+                new Animal("Tyke", "male", 2, "dog"),
+                new Animal("Abu", "male", 4, "monkey"),
+                new Animal("George", "male", 6, "monkey"),
+                new Animal("Coco", "female", 1, "monkey"))));
+        
+        System.out.println(z.toString());
+
     }
 }
