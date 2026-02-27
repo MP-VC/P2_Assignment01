@@ -18,6 +18,9 @@ public class Main {
         System.out.println(Util2DArray.min(numbs1));
         System.out.println(Arrays.toString(Util2DArray.minOfRow(numbs1)));
         System.out.println(Arrays.toString(Util2DArray.minOfCol(numbs1)));
-        System.out.println(Arrays.toString(Util2DArray.add(numbs1,numb2)));
+        System.out.println(Arrays.deepToString(Util2DArray.add(numbs1,numb2)));
+        System.out.println(Arrays.deepToString(Util2DArray.appendArray(numbs1,numb2)));
+        System.out.println(Arrays.deepToString(Util2DArray.expendArray(numbs1,numb2)));
+        System.out.println(Arrays.deepToString(Util2DArray.transposeMatrix(numbs1)));
     }
 }
